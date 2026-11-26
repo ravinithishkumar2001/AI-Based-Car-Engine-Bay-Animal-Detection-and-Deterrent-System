@@ -1,0 +1,16 @@
+#pragma once
+#include <Arduino.h>
+constexpr int ULTRASONIC_ENABLE_GPIO = 43;
+constexpr int TEMPERATURE_ADC_GPIO = -1;
+// DFRobot DFR1154 camera mapping used by its examples; not for generic ESP32-CAMs.
+constexpr int CAM_PWDN=-1, CAM_RESET=-1, CAM_XCLK=15, CAM_SIOD=4, CAM_SIOC=5;
+constexpr int CAM_D7=16, CAM_D6=17, CAM_D5=18, CAM_D4=12, CAM_D3=10, CAM_D2=8, CAM_D1=9, CAM_D0=11;
+constexpr int CAM_VSYNC=6, CAM_HREF=7, CAM_PCLK=13;
+constexpr int SD_CLK=39, SD_CMD=38, SD_D0=40;
+constexpr int AUDIO_BCLK=41, AUDIO_LRC=42, AUDIO_DOUT=2;
+constexpr uint32_t MOTION_INTERVAL_MS=500, DETECTION_COOLDOWN_MS=30000, VERIFY_WAIT_MS=20000, DETERRING_MS=10000;
+constexpr uint8_t MAX_DETERRENT_CYCLES=2, REQUIRED_REPEATED_DETECTIONS=3, POST_ABSENCE_FRAMES=3;
+constexpr float CLASSIFICATION_THRESHOLD=0.78f;
+constexpr uint16_t MOTION_DIFF_THRESHOLD=26;
+constexpr size_t MOTION_WIDTH=160, MOTION_HEIGHT=120;
+
